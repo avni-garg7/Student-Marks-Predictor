@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 # Step 1: Load data
-data = pd.read_csv("student_scores.csv")
+data = pd.read_csv("Student_Performance.csv")
 
 # Step 2: Normalize (optional if your max is already 24 and 100)
 data['Hours'] = data['Hours'] / 24.0
@@ -37,4 +37,5 @@ plt.title('Student Marks Prediction')
 plt.legend()
 plt.grid(True)
 plt.show()
+
 
